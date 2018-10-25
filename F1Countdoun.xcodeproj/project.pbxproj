@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C38C92B2129F45A008C9805 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C92A2129F45A008C9805 /* NetworkManager.m */; };
+		5C38C92E2129F7ED008C9805 /* CountdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C92D2129F7ED008C9805 /* CountdownParser.m */; };
+		5C38C931212AA76E008C9805 /* CountdownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C930212AA76E008C9805 /* CountdownController.m */; };
+		5C38C93D212BF9CA008C9805 /* TyreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7273052127524F000576D5 /* TyreView.m */; };
+		5C38C93E212C2FA3008C9805 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C92A2129F45A008C9805 /* NetworkManager.m */; };
+		5C38C93F212C2FA8008C9805 /* CountdownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C930212AA76E008C9805 /* CountdownController.m */; };
+		5C38C940212C2FAC008C9805 /* CountdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C38C92D2129F7ED008C9805 /* CountdownParser.m */; };
+		5C7273062127524F000576D5 /* TyreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7273052127524F000576D5 /* TyreView.m */; };
 		5CE4E76321274C350040FE4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4E76221274C350040FE4F /* AppDelegate.m */; };
 		5CE4E76621274C350040FE4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4E76521274C350040FE4F /* ViewController.m */; };
 		5CE4E76921274C350040FE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE4E76721274C350040FE4F /* Main.storyboard */; };
@@ -14,6 +22,10 @@
 		5CE4E76E21274C360040FE4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE4E76C21274C360040FE4F /* LaunchScreen.storyboard */; };
 		5CE4E77121274C360040FE4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4E77021274C360040FE4F /* main.m */; };
 		5CE4E77B21274C370040FE4F /* F1CountdounTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4E77A21274C370040FE4F /* F1CountdounTests.m */; };
+		5CE4E78C21274C4A0040FE4F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE4E78B21274C4A0040FE4F /* NotificationCenter.framework */; };
+		5CE4E79021274C4A0040FE4F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4E78F21274C4A0040FE4F /* TodayViewController.m */; };
+		5CE4E79321274C4A0040FE4F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE4E79121274C4A0040FE4F /* MainInterface.storyboard */; };
+		5CE4E79721274C4A0040FE4F /* F1CountdownWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CE4E78921274C4A0040FE4F /* F1CountdownWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +36,38 @@
 			remoteGlobalIDString = 5CE4E75D21274C350040FE4F;
 			remoteInfo = F1Countdoun;
 		};
+		5CE4E79521274C4A0040FE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CE4E75621274C350040FE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CE4E78821274C4A0040FE4F;
+			remoteInfo = F1CountdownWidget;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5CE4E79B21274C4A0040FE4F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CE4E79721274C4A0040FE4F /* F1CountdownWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5C38C9292129F45A008C9805 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		5C38C92A2129F45A008C9805 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		5C38C92C2129F7ED008C9805 /* CountdownParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownParser.h; sourceTree = "<group>"; };
+		5C38C92D2129F7ED008C9805 /* CountdownParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownParser.m; sourceTree = "<group>"; };
+		5C38C92F212AA76E008C9805 /* CountdownController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownController.h; sourceTree = "<group>"; };
+		5C38C930212AA76E008C9805 /* CountdownController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownController.m; sourceTree = "<group>"; };
+		5C7273042127524F000576D5 /* TyreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TyreView.h; sourceTree = "<group>"; };
+		5C7273052127524F000576D5 /* TyreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TyreView.m; sourceTree = "<group>"; };
 		5CE4E75E21274C350040FE4F /* F1Countdoun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1Countdoun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE4E76121274C350040FE4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CE4E76221274C350040FE4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +81,12 @@
 		5CE4E77621274C370040FE4F /* F1CountdounTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = F1CountdounTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE4E77A21274C370040FE4F /* F1CountdounTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F1CountdounTests.m; sourceTree = "<group>"; };
 		5CE4E77C21274C370040FE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE4E78921274C4A0040FE4F /* F1CountdownWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = F1CountdownWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE4E78B21274C4A0040FE4F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5CE4E78E21274C4A0040FE4F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		5CE4E78F21274C4A0040FE4F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		5CE4E79221274C4A0040FE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5CE4E79421274C4A0040FE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CE4E78621274C4A0040FE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE4E78C21274C4A0040FE4F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +120,8 @@
 			children = (
 				5CE4E76021274C350040FE4F /* F1Countdoun */,
 				5CE4E77921274C370040FE4F /* F1CountdounTests */,
+				5CE4E78D21274C4A0040FE4F /* F1CountdownWidget */,
+				5CE4E78A21274C4A0040FE4F /* Frameworks */,
 				5CE4E75F21274C350040FE4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +131,7 @@
 			children = (
 				5CE4E75E21274C350040FE4F /* F1Countdoun.app */,
 				5CE4E77621274C370040FE4F /* F1CountdounTests.xctest */,
+				5CE4E78921274C4A0040FE4F /* F1CountdownWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +148,14 @@
 				5CE4E76C21274C360040FE4F /* LaunchScreen.storyboard */,
 				5CE4E76F21274C360040FE4F /* Info.plist */,
 				5CE4E77021274C360040FE4F /* main.m */,
+				5C7273042127524F000576D5 /* TyreView.h */,
+				5C7273052127524F000576D5 /* TyreView.m */,
+				5C38C9292129F45A008C9805 /* NetworkManager.h */,
+				5C38C92A2129F45A008C9805 /* NetworkManager.m */,
+				5C38C92C2129F7ED008C9805 /* CountdownParser.h */,
+				5C38C92D2129F7ED008C9805 /* CountdownParser.m */,
+				5C38C92F212AA76E008C9805 /* CountdownController.h */,
+				5C38C930212AA76E008C9805 /* CountdownController.m */,
 			);
 			path = F1Countdoun;
 			sourceTree = "<group>";
@@ -103,6 +169,25 @@
 			path = F1CountdounTests;
 			sourceTree = "<group>";
 		};
+		5CE4E78A21274C4A0040FE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CE4E78B21274C4A0040FE4F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CE4E78D21274C4A0040FE4F /* F1CountdownWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5CE4E78E21274C4A0040FE4F /* TodayViewController.h */,
+				5CE4E78F21274C4A0040FE4F /* TodayViewController.m */,
+				5CE4E79121274C4A0040FE4F /* MainInterface.storyboard */,
+				5CE4E79421274C4A0040FE4F /* Info.plist */,
+			);
+			path = F1CountdownWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,10 +198,12 @@
 				5CE4E75A21274C350040FE4F /* Sources */,
 				5CE4E75B21274C350040FE4F /* Frameworks */,
 				5CE4E75C21274C350040FE4F /* Resources */,
+				5CE4E79B21274C4A0040FE4F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CE4E79621274C4A0040FE4F /* PBXTargetDependency */,
 			);
 			name = F1Countdoun;
 			productName = F1Countdoun;
@@ -141,6 +228,23 @@
 			productReference = 5CE4E77621274C370040FE4F /* F1CountdounTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5CE4E78821274C4A0040FE4F /* F1CountdownWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE4E79821274C4A0040FE4F /* Build configuration list for PBXNativeTarget "F1CountdownWidget" */;
+			buildPhases = (
+				5CE4E78521274C4A0040FE4F /* Sources */,
+				5CE4E78621274C4A0040FE4F /* Frameworks */,
+				5CE4E78721274C4A0040FE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = F1CountdownWidget;
+			productName = F1CountdownWidget;
+			productReference = 5CE4E78921274C4A0040FE4F /* F1CountdownWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +260,9 @@
 					5CE4E77521274C370040FE4F = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 5CE4E75D21274C350040FE4F;
+					};
+					5CE4E78821274C4A0040FE4F = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -174,6 +281,7 @@
 			targets = (
 				5CE4E75D21274C350040FE4F /* F1Countdoun */,
 				5CE4E77521274C370040FE4F /* F1CountdounTests */,
+				5CE4E78821274C4A0040FE4F /* F1CountdownWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +304,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CE4E78721274C4A0040FE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE4E79321274C4A0040FE4F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -203,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7273062127524F000576D5 /* TyreView.m in Sources */,
 				5CE4E76621274C350040FE4F /* ViewController.m in Sources */,
+				5C38C92E2129F7ED008C9805 /* CountdownParser.m in Sources */,
 				5CE4E77121274C360040FE4F /* main.m in Sources */,
+				5C38C931212AA76E008C9805 /* CountdownController.m in Sources */,
+				5C38C92B2129F45A008C9805 /* NetworkManager.m in Sources */,
 				5CE4E76321274C350040FE4F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +337,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CE4E78521274C4A0040FE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C38C93D212BF9CA008C9805 /* TyreView.m in Sources */,
+				5C38C940212C2FAC008C9805 /* CountdownParser.m in Sources */,
+				5C38C93F212C2FA8008C9805 /* CountdownController.m in Sources */,
+				5C38C93E212C2FA3008C9805 /* NetworkManager.m in Sources */,
+				5CE4E79021274C4A0040FE4F /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -224,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = 5CE4E75D21274C350040FE4F /* F1Countdoun */;
 			targetProxy = 5CE4E77721274C370040FE4F /* PBXContainerItemProxy */;
+		};
+		5CE4E79621274C4A0040FE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CE4E78821274C4A0040FE4F /* F1CountdownWidget */;
+			targetProxy = 5CE4E79521274C4A0040FE4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -242,6 +379,14 @@
 				5CE4E76D21274C360040FE4F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CE4E79121274C4A0040FE4F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CE4E79221274C4A0040FE4F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,13 +507,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75WN78RS4G;
+				DEVELOPMENT_TEAM = NGR3DF2L2G;
 				INFOPLIST_FILE = F1Countdoun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.helpshift.F1Countdoun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.F1CountdownApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,13 +524,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75WN78RS4G;
+				DEVELOPMENT_TEAM = NGR3DF2L2G;
 				INFOPLIST_FILE = F1Countdoun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.helpshift.F1Countdoun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.F1CountdownApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,6 +574,42 @@
 			};
 			name = Release;
 		};
+		5CE4E79921274C4A0040FE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NGR3DF2L2G;
+				INFOPLIST_FILE = F1CountdownWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.F1CountdownApp.F1CountdownWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CE4E79A21274C4A0040FE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NGR3DF2L2G;
+				INFOPLIST_FILE = F1CountdownWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alok.F1CountdownApp.F1CountdownWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +636,15 @@
 			buildConfigurations = (
 				5CE4E78321274C370040FE4F /* Debug */,
 				5CE4E78421274C370040FE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE4E79821274C4A0040FE4F /* Build configuration list for PBXNativeTarget "F1CountdownWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE4E79921274C4A0040FE4F /* Debug */,
+				5CE4E79A21274C4A0040FE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

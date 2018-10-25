@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi3-GS-SzK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="zhR-CP-hu3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-Dc-tfN">
+                                <rect key="frame" x="25" y="25" width="270" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-Mm-nZF" customClass="TyreView">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-uL-oNF">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Cwe-SM-L3w"/>
+                                            <constraint firstItem="OXe-uL-oNF" firstAttribute="leading" secondItem="WhS-Mm-nZF" secondAttribute="leading" id="VUP-B7-wzq"/>
+                                            <constraint firstItem="OXe-uL-oNF" firstAttribute="top" secondItem="WhS-Mm-nZF" secondAttribute="top" id="aWL-Jt-rm3"/>
+                                            <constraint firstAttribute="trailing" secondItem="OXe-uL-oNF" secondAttribute="trailing" id="hgt-V2-35c"/>
+                                            <constraint firstAttribute="bottom" secondItem="OXe-uL-oNF" secondAttribute="bottom" id="kge-wl-7Xo"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="OXe-uL-oNF" id="pjK-pb-M4u"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYb-tl-lfe" customClass="TyreView">
+                                        <rect key="frame" x="80" y="0.0" width="80" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apy-4S-b3m">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Apy-4S-b3m" firstAttribute="top" secondItem="BYb-tl-lfe" secondAttribute="top" id="I0g-PH-3Vp"/>
+                                            <constraint firstAttribute="bottom" secondItem="Apy-4S-b3m" secondAttribute="bottom" id="UFT-O8-rBE"/>
+                                            <constraint firstAttribute="width" constant="80" id="Xwh-1R-ZBA"/>
+                                            <constraint firstItem="Apy-4S-b3m" firstAttribute="leading" secondItem="BYb-tl-lfe" secondAttribute="leading" id="dAI-Zt-18W"/>
+                                            <constraint firstAttribute="trailing" secondItem="Apy-4S-b3m" secondAttribute="trailing" id="l0p-LT-93O"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="Apy-4S-b3m" id="rNM-Ns-hp4"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sc6-Ft-Y6J" customClass="TyreView">
+                                        <rect key="frame" x="160" y="0.0" width="80" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-yw-s2K">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Sdi-yw-s2K" secondAttribute="bottom" id="OjA-E9-JRN"/>
+                                            <constraint firstAttribute="width" constant="80" id="U2a-sH-8G7"/>
+                                            <constraint firstItem="Sdi-yw-s2K" firstAttribute="leading" secondItem="Sc6-Ft-Y6J" secondAttribute="leading" id="Vyi-Gu-oZj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sdi-yw-s2K" secondAttribute="trailing" id="ebs-Kn-MSN"/>
+                                            <constraint firstItem="Sdi-yw-s2K" firstAttribute="top" secondItem="Sc6-Ft-Y6J" secondAttribute="top" id="tDH-yi-j6H"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="Sdi-yw-s2K" id="oQQ-Of-hvI"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbR-1W-XTN" customClass="TyreView">
+                                        <rect key="frame" x="240" y="0.0" width="30" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VZ-dW-1fK">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="80"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="BUQ-zH-IHd"/>
+                                            <constraint firstItem="1VZ-dW-1fK" firstAttribute="top" secondItem="JbR-1W-XTN" secondAttribute="top" id="JQ0-oM-NmZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="1VZ-dW-1fK" secondAttribute="bottom" id="Mys-xq-7xC"/>
+                                            <constraint firstAttribute="trailing" secondItem="1VZ-dW-1fK" secondAttribute="trailing" id="PUf-Su-aFx"/>
+                                            <constraint firstItem="1VZ-dW-1fK" firstAttribute="leading" secondItem="JbR-1W-XTN" secondAttribute="leading" id="Vey-3B-pDG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="1VZ-dW-1fK" id="QfZ-c0-bZF"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WhS-Mm-nZF" firstAttribute="top" secondItem="L2f-Dc-tfN" secondAttribute="top" id="4Xh-dJ-fYx"/>
+                                    <constraint firstAttribute="bottom" secondItem="JbR-1W-XTN" secondAttribute="bottom" id="9io-D9-rPi"/>
+                                    <constraint firstAttribute="height" constant="80" id="DJA-Pw-2WX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sc6-Ft-Y6J" secondAttribute="bottom" id="FKU-hB-dJn"/>
+                                    <constraint firstAttribute="bottom" secondItem="WhS-Mm-nZF" secondAttribute="bottom" id="GDL-kk-kBQ"/>
+                                    <constraint firstItem="BYb-tl-lfe" firstAttribute="top" secondItem="L2f-Dc-tfN" secondAttribute="top" id="GZK-t1-YOz"/>
+                                    <constraint firstItem="JbR-1W-XTN" firstAttribute="top" secondItem="L2f-Dc-tfN" secondAttribute="top" id="Jyf-gC-vIC"/>
+                                    <constraint firstAttribute="bottom" secondItem="BYb-tl-lfe" secondAttribute="bottom" id="d9j-ZM-ouW"/>
+                                    <constraint firstItem="Sc6-Ft-Y6J" firstAttribute="top" secondItem="L2f-Dc-tfN" secondAttribute="top" id="kbe-FT-Mvu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wi3-GS-SzK" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="2Xk-8h-1Zi"/>
+                            <constraint firstItem="L2f-Dc-tfN" firstAttribute="top" secondItem="Wi3-GS-SzK" secondAttribute="bottom" id="dfp-as-C4Y"/>
+                            <constraint firstItem="Wi3-GS-SzK" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="hG9-fM-xLy"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="L2f-Dc-tfN" secondAttribute="trailing" constant="25" id="siP-0f-Ut5"/>
+                            <constraint firstItem="Wi3-GS-SzK" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="yaH-Al-fSO"/>
+                            <constraint firstItem="L2f-Dc-tfN" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="25" id="yit-Ff-Yrk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="daysTyreView" destination="WhS-Mm-nZF" id="wJr-c3-ffA"/>
+                        <outlet property="gpTitleLabel" destination="Wi3-GS-SzK" id="h6H-Wh-YTU"/>
+                        <outlet property="hoursTyreView" destination="BYb-tl-lfe" id="9Tl-Wz-5mY"/>
+                        <outlet property="minuteTyreView" destination="Sc6-Ft-Y6J" id="LmQ-48-Av1"/>
+                        <outlet property="secondsTyreView" destination="JbR-1W-XTN" id="vxK-Gp-eYs"/>
+                        <outlet property="tyreStackView" destination="L2f-Dc-tfN" id="VWs-dL-jLD"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="32" y="33.283358320839582"/>
+        </scene>
+    </scenes>
+</document>

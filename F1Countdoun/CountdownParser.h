@@ -1,0 +1,15 @@
+//
+//  CountdownParser.h
+//  F1Countdoun
+//
+//  Created by Alok Karnik on 20/08/18.
+//  Copyright © 2018 Alok Karnik. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface CountdownParser : NSObject
++ (NSDateComponents *) getTimeUntilNextGPFrom:(NSDictionary *)raceDict;
++ (NSDateComponents *) getTimeFromLastGP:(NSDictionary *)lastRaceDict GPTill:(NSDictionary *)raceDict;
++ (NSDictionary *) getActualGPFrom:(NSDictionary *) raceDict;
+@end

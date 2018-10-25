@@ -1,15 +1,16 @@
 //
-//  ViewController.m
-//  F1Countdoun
+//  TodayViewController.m
+//  F1CountdownWidget
 //
 //  Created by Alok Karnik on 18/08/18.
 //  Copyright © 2018 Alok Karnik. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TodayViewController.h"
 #import "TyreView.h"
 #import "CountdownParser.h"
-#import "CountdownController.h"
+
+#import <NotificationCenter/NotificationCenter.h>
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor \
@@ -18,8 +19,9 @@ green:((float) ((rgbValue & 0x00FF00) >> 8))/255.0 \
 blue:((float) (rgbValue & 0x0000FF))/255.0 \
 alpha:1.0]
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet TyreView *tyreView;
+
+
+@interface TodayViewController () <NCWidgetProviding>
 @property (weak, nonatomic) IBOutlet UILabel *gpTitleLabel;
 @property (weak, nonatomic) IBOutlet UIStackView *tyreStackView;
 
@@ -29,11 +31,11 @@ alpha:1.0]
 @property (nonatomic, strong) IBOutlet TyreView *secondsTyreView;
 @end
 
-@implementation ViewController
+@implementation TodayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self configureTyres];
     [CountdownController sharedInstance].delegate = self;
 }
