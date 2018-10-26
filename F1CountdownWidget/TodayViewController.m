@@ -36,8 +36,8 @@ alpha:1.0]
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self configureTyres];
     [CountdownController sharedInstance].delegate = self;
+    [self setupUI];
 }
 
 - (void) configureTyres {
@@ -65,13 +65,19 @@ alpha:1.0]
 }
 
 - (void)gpDataUpdated {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.gpTitleLabel setText:[[CountdownController sharedInstance] getNextGPTitle]];
-        NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getTimeFromNextGPTillNextGP];
-        [self.daysTyreView updateMaximumValue:[lastGPBreakdownInfo day]];
-    });
+    [self setupUI];
 }
 
+- (void) setupUI {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self configureTyres];
+        if([[CountdownController sharedInstance] getNextGPTitle]) {
+            [self.gpTitleLabel setText:[[CountdownController sharedInstance] getNextGPTitle]];
+            NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getTimeFromNextGPTillNextGP];
+            [self.daysTyreView updateMaximumValue:[lastGPBreakdownInfo day]];
+        }
+    });
+}
 - (void)updateCountdown {
     [self updateUIWithDetails];
 }
