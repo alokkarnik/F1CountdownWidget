@@ -73,7 +73,7 @@ alpha:1.0]
         [self configureTyres];
         if([[CountdownController sharedInstance] getNextGPTitle]) {
             [self.gpTitleLabel setText:[[CountdownController sharedInstance] getNextGPTitle]];
-            NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getTimeFromNextGPTillNextGP];
+            NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getDaysFromLastGPTillNextGP];
             [self.daysTyreView updateMaximumValue:[lastGPBreakdownInfo day]];
         }
     });

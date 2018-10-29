@@ -65,7 +65,7 @@ alpha:1.0]
 - (void)gpDataUpdated {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.gpTitleLabel setText:[[CountdownController sharedInstance] getNextGPTitle]];
-        NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getTimeFromNextGPTillNextGP];
+        NSDateComponents *lastGPBreakdownInfo = [[CountdownController sharedInstance] getDaysFromLastGPTillNextGP];
         [self.daysTyreView updateMaximumValue:[lastGPBreakdownInfo day]];
     });
 }

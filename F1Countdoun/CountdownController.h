@@ -18,6 +18,6 @@
 
 + (CountdownController *) sharedInstance;
 - (NSDateComponents *) getTimeUntilNextGP;
-- (NSDateComponents *) getTimeFromNextGPTillNextGP;
+- (NSDateComponents *) getDaysFromLastGPTillNextGP;
 - (NSString *) getNextGPTitle;
 @end

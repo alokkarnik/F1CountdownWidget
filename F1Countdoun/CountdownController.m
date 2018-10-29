@@ -60,10 +60,14 @@
 }
 
 - (NSDateComponents *) getTimeUntilNextGP {
-    return [CountdownParser getTimeUntilNextGPFrom:self.nextGP];
+    NSDateComponents *timeUntilNextGP = [CountdownParser getTimeUntilNextGPFrom:self.nextGP];
+    if([[NSDate date] compare:[[NSCalendar currentCalendar] dateFromComponents:timeUntilNextGP]]== NSOrderedAscending) {
+        [self fetchData];
+    }
+    return timeUntilNextGP;
 }
 
-- (NSDateComponents *) getTimeFromNextGPTillNextGP {
+- (NSDateComponents *) getDaysFromLastGPTillNextGP {
     return [CountdownParser getTimeFromLastGP:self.lastGP GPTill:self.nextGP];
 }
 
